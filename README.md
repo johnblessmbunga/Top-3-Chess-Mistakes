@@ -33,12 +33,10 @@ A lightweight dashboard app that allows users to visualise, analyse, and  intera
 
 ## Installation
 
-Clone the repo:
-
+###Clone the repo:
 ```bash
 git clone https://github.com/johnblessmbunga/Top-3-Chess-Mistakes.git
 cd Top-3-Chess-Mistakes
-
 Set up virtual environment:
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
