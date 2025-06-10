@@ -154,7 +154,6 @@ def is_pgn_structurally_valid(pgn_string):
     headers_found = {h: False for h in required_headers}
     header_pattern = re.compile(r'^\[(\w+)\s+"(.*)"\]$')
     lines = pgn_string.strip().splitlines()
-    move_section_started = False
     for line in lines:
         line = line.strip()
         if not line:
@@ -165,21 +164,20 @@ def is_pgn_structurally_valid(pgn_string):
         # Check for unclosed bracket or quote in header lines
         if line.startswith('['):
             if not line.endswith(']'):
-                return False, f"PGN Header Error Detected"
+                return False, "PGN Structure Error"
             if line.count('"') % 2 != 0:
-                return False, f"PGN Header Error Detected"
+                return False, "PGN Structure Error"
             m = header_pattern.match(line)
             if m:
                 key = m.group(1)
                 if key in headers_found:
                     headers_found[key] = True
         elif line and not line.startswith('['):
-            move_section_started = True
             break  # Stop checking headers once moves start
 
     missing = [h for h, found in headers_found.items() if not found]
     if missing:
-        return False, f"PGN Header Error Detected"
+        return False, "PGN Structure Error"
 
     # 2. Check for at least one move in SAN notation
     move_lines = [line for line in lines if not line.startswith('[') and line.strip()]
@@ -200,11 +198,11 @@ def is_pgn_structurally_valid(pgn_string):
     san_pattern = re.compile(r"^(O-O(-O)?|[KQRBN]?[a-h]?[1-8]?x?[a-h][1-8](=[QRBN])?|[a-h][1-8])[\+#=]?$")
     valid_moves = [m for m in moves if san_pattern.match(m)]
     if not valid_moves:
-        return False, "No valid chess moves found in PGN."
+        return False, "PGN Structure Error"
 
     # 3. Check for plain text (e.g., "hello world" or random text)
     if len(valid_moves) < max(1, len(moves) // 2):
-        return False, "PGN does not appear to contain valid chess move notation."
+        return False, "PGN Structure Error"
 
     return True, None
 def find_mistakes(pgn_string, color,stockfish_path):
@@ -364,7 +362,7 @@ def start_window(username, stockfish_path):
         if error_message:
             error_font = pygame.font.SysFont(None, 32)
             error_surface = error_font.render(error_message, True, (255, 80, 80))
-            screen.blit(error_surface, ((menu_width - error_surface.get_width()) // 2, menu_height // 2 - 40))
+            screen.blit(error_surface, ((menu_width - error_surface.get_width()) // 2, menu_height // 2 - 45))
             pygame.display.flip()
             pygame.time.wait(2000)
             start_window(username, stockfish_path)
