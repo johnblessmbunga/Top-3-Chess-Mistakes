@@ -1,15 +1,14 @@
-# ♟️ Top-3-Chess-Mistakes
+# Top-3-Chess-Mistakes
 
-A lightweight dashboard app that visualizes and analyzes the top 3 most common mistakes in beginner and intermediate chess games. Built to help players understand and eliminate recurring errors in their play.
+A lightweight dashboard app that allows users to visualise, analyse, and  interact with  the top 3 mistakes of chess game, or game phases. 
 
 ![screenshot](assets/screenshot.png)
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Features](#features)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
@@ -20,29 +19,28 @@ A lightweight dashboard app that visualizes and analyzes the top 3 most common m
 
 ---
 
-## 🚀 Features
+## Features
 
-- Visual breakdown of blunders, missed tactics, and poor endgames
+- Visual top 3 mistakes in order of severity
 - Supports uploading .pgn game files
-- Interactive mistake categorization and heatmaps
-- Simple dashboard layout using [Tkinter / Streamlit / Flask]*
-- Export mistake reports as PDF
+- Interactive board for further analysis
+- Simple dashboard layout using [pygame]*
+- Retry and Answer button to allow another attempt at mistake
+
+
 
 ---
 
-## 🎬 Demo
-
-![gif demo](assets/demo.gif)
-
-Or try the app here: [Live Demo](https://your-demo-link.com)
-
----
-
-## 💾 Installation
+## Installation
 
 Clone the repo:
 
 ```bash
-git clone https://github.com/yourusername/Top-3-Chess-Mistakes.git
+git clone https://github.com/johnblessmbunga/Top-3-Chess-Mistakes.git
 cd Top-3-Chess-Mistakes
+
+Set up virtual environment:
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate    # Windows
 
