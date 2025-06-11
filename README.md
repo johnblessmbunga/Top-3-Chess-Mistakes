@@ -64,7 +64,7 @@ run Top-3-Chess-Mistakes.py
 ```
 ### 2 Upload PGN
 <p align="center">
-  <img src="screenshots/PGN_insert.png" width="250" alt="PGN"/>
+  <img src="screenshots/PGN_insert.png" width="500" alt="PGN"/>
   <br/>
   <em>Figure 1: Start Window for PGN insert </em>
 </p>
