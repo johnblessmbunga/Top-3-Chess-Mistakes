@@ -73,6 +73,27 @@ run Top-3-Chess-Mistakes.py
 2. Paste PGN in blue area
 3. Press Enter or click enter button
 
+### 3 Choose Game Stage View
+1. All
+2. Opening
+3. Middlegame
+4. Endgame
+
+Note if no mistakes detected in a stage the stage will not appear on this page
+
+### 4 Analyse and Retry Mistakes
+- Press Retry button for another attempt at mistake
+- Press Best buttoon to find best move instead of mistake
+- Press Show Lines button to reveal further moves
+- Interact with board to play legal moves
+- Press Next or Previous buttons to switch to different mistake positions
+- 
+### 5 New Analysis
+- Use Back button to return to main menu  for analysis in different game stage
+- Use Return to Start button to insert new PGN
+
+
+
 
 
 
