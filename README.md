@@ -68,6 +68,7 @@ run Top-3-Chess-Mistakes.py
   <br/>
   <em>Figure 1: Start Window for PGN insert </em>
 </p>
+
 1. Copy PGN of game
 2. Paste PGN in blue area
 3. Press Enter or click enter button
