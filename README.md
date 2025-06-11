@@ -67,7 +67,7 @@ Download from [stockfishchess.org](https://stockfishchess.org/) for Windows
 run Top-3-Chess-Mistakes.py
 ```
 ### 2 Upload PGN
-![PGN](screenshots/PGN insert.png)
+![PGN](screenshots/PGN_insert.png)
 1. Copy PGN of game
 2. Paste PGN in blue area
 3. Press Enter or click enter button
