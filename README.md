@@ -8,11 +8,7 @@ A lightweight dashboard app that allows users to visualise, analyse, and  intera
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ---
 
@@ -67,12 +63,16 @@ Download from [stockfishchess.org](https://stockfishchess.org/) for Windows
 run Top-3-Chess-Mistakes.py
 ```
 ### 2 Upload PGN
-![PGN](screenshots/PGN_insert.png)
+<p align="center">
+  <img src="screenshots/PGN_insert.png" width="100" alt="PGN"/>
+  <br/>
+  <em>Figure 1: Start Window for PGN insert </em>
+</p>
 1. Copy PGN of game
 2. Paste PGN in blue area
 3. Press Enter or click enter button
 
-### 3 Choose Game Stage View
+### 3 Choose Game Stage to View
 ![Main Menu](screenshots/Main_menu.png)
 1. All
 2. Opening
@@ -93,7 +93,8 @@ Note if no mistakes detected in a stage the stage will not appear on this page
 - Use Back button to return to main menu  for analysis in different game stage
 - Use Return to Start button to insert new PGN
 
-
+## License
+This project is licensed under the MIT License. See LICENSE for more information
 
 
 
