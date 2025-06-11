@@ -20,6 +20,7 @@ A lightweight dashboard app that allows users to visualise, analyse, and  intera
 - Simple dashboard layout using [pygame]*
 - Retry and Answer button to allow another attempt at mistake
 - Error messages for incorrect input
+- Automatically analyses from inputted username
 
 
 
@@ -32,6 +33,7 @@ A lightweight dashboard app that allows users to visualise, analyse, and  intera
 git clone https://github.com/johnblessmbunga/Top-3-Chess-Mistakes.git
 cd Top-3-Chess-Mistakes
 ```
+Optional change username manually:username = "Example User Name"
 
 ### Virtual Environment Setup
 
@@ -56,7 +58,7 @@ sudo apt install stockfish  # Debian/Ubuntu
 brew install stockfish      # macOS (Homebrew)
 ```
 Download from [stockfishchess.org](https://stockfishchess.org/) for Windows
-
+---
 ## Usage
 ### 1 Launch Dashboard
 ```bash
@@ -103,7 +105,7 @@ Note if no mistakes detected in a stage the stage will not appear on this page
 ### 5 New Analysis
 - Use Back button to return to main menu  for analysis in different game stage
 - Use Return to Start button to insert new PGN
-
+---
 ## License
 This project is licensed under the MIT License. See LICENSE for more information
 
