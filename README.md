@@ -56,6 +56,7 @@ pip install chess
 pip install pygame
 pip install pyperclip
 ```
+install assets from asset folder
 ### Install Stockfish
 ```bash
 sudo apt install stockfish  # Debian/Ubuntu
@@ -87,7 +88,7 @@ Note if no mistakes detected in a stage the stage will not appear on this page
 - Press Show Lines button to reveal further moves
 - Interact with board to play legal moves
 - Press Next or Previous buttons to switch to different mistake positions
-- 
+  
 ### 5 New Analysis
 - Use Back button to return to main menu  for analysis in different game stage
 - Use Return to Start button to insert new PGN
