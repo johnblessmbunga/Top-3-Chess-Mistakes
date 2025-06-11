@@ -74,7 +74,12 @@ run Top-3-Chess-Mistakes.py
 3. Press Enter or click enter button
 
 ### 3 Choose Game Stage to View
-![Main Menu](screenshots/Main_menu.png)
+<p align="center">
+  <img src="screenshots/Main_menu.png" width="500" alt="Main"/>
+  <br/>
+  <em>Figure 2: Main menu for choosing game stage </em>
+</p>
+
 1. All
 2. Opening
 3. Middlegame
@@ -83,7 +88,12 @@ run Top-3-Chess-Mistakes.py
 Note if no mistakes detected in a stage the stage will not appear on this page
 
 ### 4 Analyse and Retry Mistakes
-![Mistake Panel](screenshots/Mistake_panel.png)
+<p align="center">
+  <img src="screenshots/Mistake_panel.png" width="500" alt="Mistake"/>
+  <br/>
+  <em>Figure 2: Main menu for choosing game stage </em>
+</p>
+
 - Press Retry button for another attempt at mistake
 - Press Best buttoon to find best move instead of mistake
 - Press Show Lines button to reveal further moves
