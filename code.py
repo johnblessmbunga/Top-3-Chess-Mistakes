@@ -653,7 +653,8 @@ def show_board_at_first_mistake_pygame(pgn_string, color, stockfish_path,choice,
         for move in all_moves:
             san = board.san(move)
             current_move_number = board.fullmove_number
-            if san == move_san and current_move_number == move_number:
+            side = "white" if board.turn == chess.WHITE else "black"
+            if san == move_san and current_move_number == move_number and side == color:
                 mistake_move = move
                 prev_mistake_positions.append((board.copy()))
                 board.push(move)
